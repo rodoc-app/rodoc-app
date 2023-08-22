@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>HelpDialog</class>
+ <widget class="QDialog" name="HelpDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>675</width>
+    <height>654</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Help</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="resources.qrc">
+    <normaloff>:/resources/appIcon.svg</normaloff>:/resources/appIcon.svg</iconset>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QTabWidget" name="tabWidget">
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="tab">
+      <attribute name="title">
+       <string>Welcome</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <widget class="QTextEdit" name="welcome">
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+         <property name="markdown">
+          <string># Welcome to rodoc
+
+This is a brief introduction to this application for organizing family trees.
+Each **family tree** is saved and organized in a **project**.
+
+## Project
+
+Each **project** is stored in a specific directory on a filesystem, assuming that
+the entire subtree of the project root directory should not be used for
+different purposes.
+
+Various kinds of entities can be used throughout the project to express all the
+intended information related not just to persons and their relations.
+
+## Persons
+
+Each family tree primarily contains a list of **persons**, each having basic
+information about themselves, such as a **name**, **surname**, etc. Each person
+can also have multiple user-defined **tags**.
+
+## Relations
+
+To bind two particular **persons** together, we use the concept of a **relation**
+to record their real-world interconnection.
+
+## Events
+
+**Persons** may also attend various types of events, such as weddings, allowing
+these to be associated with a **place**, **date**, as well as allowing the
+persons to participate in specific roles.
+
+## Files
+
+Finally, each **person** can have an unlimited number of physical files of
+arbitrary types, logically divided into three groups of **files**, **media**, and 
+**notes**.
+
+</string>
+         </property>
+         <property name="html">
+          <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Noto Sans'; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;h1 style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:xx-large; font-weight:600;&quot;&gt;Welcome to rodoc&lt;/span&gt;&lt;/h1&gt;
+&lt;p style=&quot; margin-top:6px; margin-bottom:6px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;This is a brief introduction to this application for organizing family trees. Each &lt;span style=&quot; font-weight:600;&quot;&gt;family tree&lt;/span&gt; is saved and organized in a &lt;span style=&quot; font-weight:600;&quot;&gt;project&lt;/span&gt;.&lt;/p&gt;
+&lt;h2 style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:x-large; font-weight:600;&quot;&gt;Project&lt;/span&gt;&lt;/h2&gt;
+&lt;p style=&quot; margin-top:6px; margin-bottom:6px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Each &lt;span style=&quot; font-weight:600;&quot;&gt;project&lt;/span&gt; is stored in a specific directory on a filesystem, assuming that the entire subtree of the project root directory should not be used for different purposes.&lt;/p&gt;
+&lt;p style=&quot; margin-top:6px; margin-bottom:6px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Various kinds of entities can be used throughout the project to express all the intended information related not just to persons and their relations.&lt;/p&gt;
+&lt;h2 style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:x-large; font-weight:600;&quot;&gt;Persons&lt;/span&gt;&lt;/h2&gt;
+&lt;p style=&quot; margin-top:6px; margin-bottom:6px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Each family tree primarily contains a list of &lt;span style=&quot; font-weight:600;&quot;&gt;persons&lt;/span&gt;, each having basic information about themselves, such as a &lt;span style=&quot; font-weight:600;&quot;&gt;name&lt;/span&gt;, &lt;span style=&quot; font-weight:600;&quot;&gt;surname&lt;/span&gt;, etc. Each person can also have multiple user-defined &lt;span style=&quot; font-weight:600;&quot;&gt;tags&lt;/span&gt;.&lt;/p&gt;
+&lt;h2 style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:x-large; font-weight:600;&quot;&gt;Relations&lt;/span&gt;&lt;/h2&gt;
+&lt;p style=&quot; margin-top:6px; margin-bottom:6px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;To bind two particular &lt;span style=&quot; font-weight:600;&quot;&gt;persons&lt;/span&gt; together, we use the concept of a &lt;span style=&quot; font-weight:600;&quot;&gt;relation&lt;/span&gt; to record their real-world interconnection.&lt;/p&gt;
+&lt;h2 style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:x-large; font-weight:600;&quot;&gt;Events&lt;/span&gt;&lt;/h2&gt;
+&lt;p style=&quot; margin-top:6px; margin-bottom:6px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Persons&lt;/span&gt; may also attend various types of events, such as weddings, allowing these to be associated with a &lt;span style=&quot; font-weight:600;&quot;&gt;place&lt;/span&gt;, &lt;span style=&quot; font-weight:600;&quot;&gt;date&lt;/span&gt;, as well as allowing the persons to participate in specific roles.&lt;/p&gt;
+&lt;h2 style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:x-large; font-weight:600;&quot;&gt;Files&lt;/span&gt;&lt;/h2&gt;
+&lt;p style=&quot; margin-top:6px; margin-bottom:6px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Finally, each &lt;span style=&quot; font-weight:600;&quot;&gt;person&lt;/span&gt; can have an unlimited number of physical files of arbitrary types, logically divided into three groups of &lt;span style=&quot; font-weight:600;&quot;&gt;files&lt;/span&gt;, &lt;span style=&quot; font-weight:600;&quot;&gt;media&lt;/span&gt;, and &lt;span style=&quot; font-weight:600;&quot;&gt;notes&lt;/span&gt;.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tab_2">
+      <attribute name="title">
+       <string>Layout</string>
+      </attribute>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QTextEdit" name="layout">
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+         <property name="markdown">
+          <string># Layout
+
+The **main window** has its **menu** and two separate **panels**.
+
+## Menu
+
+**The menu** is for using the app functions.
+
+- Changing the **settings**
+- Saving and opening **projects**
+- Editing **templates**
+- Making **exports**
+- **Importing** data
+
+## Panels
+
+The left panel displays the information regarding the active person or
+so-called **proband**, while the right panel serves for the **family tree**
+visualization.
+
+### Left Panel
+
+The left panel contains the name of the **proband** at the top, and next to that
+options to create a new person or delete the current one. Under that, there are
+several tabs:
+
+- **General** serves for changing the default **proband** information and **tags**
+- Tabs **relations**, **events**, **files**, **media**, and **notes** permits
+  organizing the same-named entities
+
+### Right Panel
+
+The right panel is also internally organized into three tabs where every view
+is interactive.
+
+1.  **Project overview** is a list of all **entities**, which can be filtered.
+2.  **Close family** is a diagram of all persons in relation to the **proband**.
+    These persons are separated into three generations.
+3.  **Tree view** is a diagram of the **family tree** showing the so-called *hourglass
+    shape diagram. The number of generations shown can be configured, it is
+    also possible to zoom in and out the view.
+</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tab_3">
+      <attribute name="title">
+       <string>Person</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="verticalLayout_3">
+       <item>
+        <widget class="QTextEdit" name="persons">
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+         <property name="markdown">
+          <string># Person
+
+Each **person** has a set of values that can be edited:
+
+- **Titles** before and after a full name (e.g., *M.Sc.* or *Ph.D.*)
+- **Name** (e.g., *John*)
+- **Surname** (e.g., *Swanson*)
+- **Birthname** (e.g., *Smith*)
+- **Gender** (e.g., *Male*)
+- **Date of birth** (e.g., *23. 2. 2000*)
+- **Place of birth** (e.g., *Prague*)
+- Flag for an **alive** person, otherwise a **date** and **place of death**
+
+## Dates
+
+Every **date** value can actually be:
+
+- **Unknown** as a special value for missing information
+- Just a **single date** (e.g., *23. 2. 2000*)
+- **Range** of two dates (e.g., *From: 23. 2. 2000 to: 25. 2. 2000*)
+
+Each date can also be associated with an optional **note** allowing to hold any
+information intended.
+
+## Tags
+
+**Tag** is a pair of a **name** and its **value**. Each person can be associated
+with an arbitrary number of such tags. However, they need to be unique.
+Whenever a new tag name is used for the first time, it becomes globally
+available within the entire project.
+
+</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tab_5">
+      <attribute name="title">
+       <string>Relations and templates</string>
+      </attribute>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <widget class="QTextEdit" name="relations">
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+         <property name="markdown">
+          <string># Relations
+
+**Relation** entity allows to bind two particular persons together to represent
+their real-world relationship. Each relation has these two pieces of
+information:
+
+- **First person** (e.g., *John Swanson*)
+- **Second person** (e.g., *Roy Swanson*)
+
+In order not to be restrained by a hard-wired list of permitted relations, the
+concept of a **relation template** was introduced.
+
+## Relation Templates
+
+Each template has the following characteristics:
+
+- **Title** (e.g., *Fatherhood*)
+- **Description** (e.g., *Relation between a father and a child*)
+- Name of the **first person** (e.g., *father*)
+- Name of the **second person** (e.g., *child*)
+- **Generation difference** (e.g., *-1*)
+- **Trait** (e.g., *Fatherhood*)
+
+### Generation Difference
+
+**Generation difference** describes which person is older and which one is
+younger. Any number can be possibly provided, but only **-1**, **0**, and **1**
+usually make sense.
+
+- **-1** means that the first person is older,
+- **0** means that both persons are in the same generation
+- **1** means that the first person is younger.
+
+### Trait
+
+**Trait** determines how a particular **relation** is intended to be
+interpretted. The given list of possibilities shadows the real world.
+
+- **No special trait** (e.g., *Uncle-Nephew*)
+- **Motherhood** (e.g., *Mother-Daughter*)
+- **Fatherhood** (e.g., *Father-Son*)
+- **Partnership** (e.g., *Marriage*)
+- **Sibling** (e.g., *Brother-Sister*)
+
+### Predefined Templates
+
+Relation templates must be created first before they can be used. While it is
+possible to introduce specific user-defined templates, several widely used
+templates were already predefined and are available for import:
+
+- **Fatherhood**
+- **Motherhood**
+- **Adoptive motherhood**
+- **Adoptive fatherhood**
+- **Partnership**
+- **Marriage**
+- **Brotherhood**
+- **Sisterhood**
+- **Siblings**
+
+## Promotion
+
+When a **person** has several **relations** of the same and supported **trait**
+(e.g., *Father*, *Mother*, *Partner*, ...), one of them can be declared as **promoted
+**, i.e., considered as the main one.
+
+## Suggestions
+
+After a new **relation** is created, several **suggestions** for additional
+plausible relations that can be inferred are automatically offered in order to
+smooth the entire process.
+
+- **Partnership relation** -&gt; share children between both of them
+- **Sibling relation** -&gt; share parents
+- **Parent relation** -&gt; children are bound as siblings, partners as parents, and
+  vice versa
+</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tab_4">
+      <attribute name="title">
+       <string>Events and templates</string>
+      </attribute>
+      <layout class="QHBoxLayout" name="horizontalLayout_3">
+       <item>
+        <widget class="QTextEdit" name="events">
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+         <property name="markdown">
+          <string># Events
+
+**Event** entity allows to describe a particular event and associate it with the
+following pieces of information:
+
+- **Date** (e.g., *20. 7. 2023*)
+- **Place** (e.g., *Prague, Czech Republic*)
+- **List of an arbitrary number of persons** acting as participants
+
+In order to make the concept of events more generic and not limit ourselves to
+certain hard-wired event types only, each event is derived from a particular **event template
+**.
+
+## Event Templates
+
+Each template has the following characteristics:
+
+- **Title** (e.g., *Wedding*)
+- **Description** (e.g., *A social event mainly between soon to be wife and
+  husband.*)
+- Flag activating a **date** (e.g., *enabled*)
+- Flag activating a **place** (e.g., *disabled*)
+- Arbitrary number of **roles** allowing to distinguish individual **participating persons
+  (e.g., *groom*, *bride*, ...)
+- Flag allowing **additional participating persons** without any roles assigned
+
+## Predefined Templates
+
+Event templates must be created first before they can be used. While it is
+possible to introduce specific user-defined templates, several widely used
+templates were already predefined and are available for import:
+
+- **Wedding**
+- **Divorce**
+- **Funeral**
+- **Graduation**
+</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tab_6">
+      <attribute name="title">
+       <string>Files</string>
+      </attribute>
+      <layout class="QHBoxLayout" name="horizontalLayout_4">
+       <item>
+        <widget class="QTextEdit" name="files">
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+         <property name="markdown">
+          <string># Files, Notes &amp; Media
+
+Each person can have an unlimited number of **files**, **media**, and **notes**.
+To organize files easily, every **person** has a separate virtual directory for
+each file type. When a file is already added to the database, it can be **shared
+among other persons without making **duplicates**.
+
+## Virtual Directories
+
+Every virtual directory can be organized individually, just like in every file
+manager.
+
+- **Renaming** a file or a directory. When renaming a file, it will be renamed
+  for all persons, but the names of directories are not shared
+- **Deleting** a file or a directory
+- **Creating** a new directory
+- **Adding** new files
+
+Keep in mind that all the files need to be in a directory, thus there is always
+the **root** directory that cannot be deleted, but it can be renamed.
+
+## Adding Files
+
+We have three options for adding files:
+
+1.  Choosing a file that is **already in the database**
+2.  Making a **copy** of an already existing file from a computer
+3.  Creating a completely **new and empty file**
+
+To keep the project internally consistent and clean, files are **permanently
+removed** upon saving the project if it happens that no **person** has access to
+them.
+
+</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+   <item>
+    <widget class="QCheckBox" name="help">
+     <property name="text">
+      <string>Do not show at startup</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QDialogButtonBox" name="buttonBox">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="standardButtons">
+      <set>QDialogButtonBox::Ok</set>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>HelpDialog</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>248</x>
+     <y>254</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>157</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

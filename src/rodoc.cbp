@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="rodoc" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="default">
+				<Option output="rodoc" prefix_auto="1" extension_auto="1" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+			</Target>
+		</Build>
+		<Unit filename="core/config.cpp" />
+		<Unit filename="core/config.h" />
+		<Unit filename="core/date.cpp" />
+		<Unit filename="core/date.h" />
+		<Unit filename="core/family_tree.cpp" />
+		<Unit filename="core/family_tree.h" />
+		<Unit filename="core/family_tree_items.cpp" />
+		<Unit filename="core/family_tree_items.h" />
+		<Unit filename="core/file_parser.cpp" />
+		<Unit filename="core/file_parser.h" />
+		<Unit filename="core/person.cpp" />
+		<Unit filename="core/person.h" />
+		<Unit filename="core/strings.h" />
+		<Unit filename="graphics/dialogs.cpp" />
+		<Unit filename="graphics/dialogs.h" />
+		<Unit filename="graphics/graphics_items.cpp" />
+		<Unit filename="graphics/graphics_items.h" />
+		<Unit filename="graphics/mainwindow.cpp" />
+		<Unit filename="graphics/mainwindow.h" />
+		<Unit filename="graphics/mainwindow_slots.cpp" />
+		<Unit filename="main.cpp" />
+		<Extensions>
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

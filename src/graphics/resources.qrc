@@ -1,0 +1,42 @@
+<RCC>
+  <qresource prefix="/">
+    <file>resources/appIcon.svg</file>
+    <file>resources/Cancel.svg</file>
+    <file>resources/clearFilter.svg</file>
+    <file>resources/closeFamily.svg</file>
+    <file>resources/createDatabase.svg</file>
+    <file>resources/databse.svg</file>
+    <file>resources/diagram.svg</file>
+    <file>resources/event.svg</file>
+    <file>resources/export.svg</file>
+    <file>resources/file.svg</file>
+    <file>resources/filter.svg</file>
+    <file>resources/find.svg</file>
+    <file>resources/folder.svg</file>
+    <file>resources/icons.sh</file>
+    <file>resources/import.svg</file>
+    <file>resources/man.svg</file>
+    <file>resources/mediaFolder.svg</file>
+    <file>resources/media.svg</file>
+    <file>resources/minus.svg</file>
+    <file>resources/multiSave.svg</file>
+    <file>resources/note.svg</file>
+    <file>resources/OK.svg</file>
+    <file>resources/other.svg</file>
+    <file>resources/plus.svg</file>
+    <file>resources/print.svg</file>
+    <file>resources/project.svg</file>
+    <file>resources/promotedRelation.svg</file>
+    <file>resources/promote.svg</file>
+    <file>resources/recent.svg</file>
+    <file>resources/relation.svg</file>
+    <file>resources/rename.svg</file>
+    <file>resources/save.svg</file>
+    <file>resources/select.svg</file>
+    <file>resources/settings.svg</file>
+    <file>resources/swap.svg</file>
+    <file>resources/trash.svg</file>
+    <file>resources/unselect.svg</file>
+    <file>resources/woman.svg</file>
+  </qresource>
+</RCC>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+
+<svg
+   width="800px"
+   height="800px"
+   viewBox="0 0 1024 1024"
+   class="icon"
+   version="1.1"
+   id="svg1258"
+   sodipodi:docname="woman.svg"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1262" />
+  <sodipodi:namedview
+     id="namedview1260"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="1.07"
+     inkscape:cx="353.73832"
+     inkscape:cy="400.46729"
+     inkscape:window-width="1920"
+     inkscape:window-height="1056"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg1258" />
+  <path
+     d="M341.333333 320h341.333334v384H341.333333z"
+     fill="#BF360C"
+     id="path1242" />
+  <path
+     d="M853.333333 938.666667H170.666667c0-234.666667 234.666667-277.333333 234.666666-277.333334h213.333334s234.666667 42.666667 234.666666 277.333334z"
+     fill="#78909C"
+     id="path1244" />
+  <path
+     d="M512 789.333333c-46.933333 0-106.666667-128-106.666667-128v-128h213.333334v128s-59.733333 128-106.666667 128z"
+     fill="#FF9800"
+     id="path1246" />
+  <path
+     d="M704 298.666667c0-162.133333-384-106.666667-384 0v149.333333c0 106.666667 85.333333 192 192 192s192-85.333333 192-192v-149.333333z"
+     fill="#FFB74D"
+     id="path1248" />
+  <path
+     d="M512 85.333333C381.866667 85.333333 192 157.866667 192 582.4l149.333333 100.266667V405.333333l256-149.333333 85.333334 106.666667v320l149.333333-128c0-85.333333-14.933333-426.666667-234.666667-426.666667l-21.333333-42.666667h-64z"
+     fill="#FF5722"
+     id="path1250" />
+  <path
+     d="M512 810.666667c-93.866667 0-106.666667-149.333333-106.666667-149.333334s53.333333 85.333333 106.666667 85.333334 106.666667-85.333333 106.666667-85.333334-12.8 149.333333-106.666667 149.333334z"
+     fill="#FFB74D"
+     id="path1252" />
+</svg>

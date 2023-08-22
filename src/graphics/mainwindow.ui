@@ -1,0 +1,2058 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1628</width>
+    <height>823</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+    <horstretch>1</horstretch>
+    <verstretch>1</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="sizeIncrement">
+   <size>
+    <width>1</width>
+    <height>1</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>rodoc</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="resources.qrc">
+    <normaloff>:/resources/appIcon.svg</normaloff>:/resources/appIcon.svg</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+     <horstretch>1</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="sizeIncrement">
+    <size>
+     <width>1</width>
+     <height>1</height>
+    </size>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_35">
+    <item>
+     <widget class="QSplitter" name="splitter">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <widget class="QGroupBox" name="groupBox_2">
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="title">
+        <string/>
+       </property>
+       <property name="flat">
+        <bool>false</bool>
+       </property>
+       <property name="checkable">
+        <bool>false</bool>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_30">
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_24">
+          <item>
+           <widget class="QLabel" name="probantLabel">
+            <property name="text">
+             <string>Proband:</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="currentPerson">
+            <property name="readOnly">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="addPerson">
+            <property name="text">
+             <string>Add person</string>
+            </property>
+            <property name="icon">
+             <iconset resource="resources.qrc">
+              <normaloff>:/resources/plus.svg</normaloff>:/resources/plus.svg</iconset>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="removePerson">
+            <property name="text">
+             <string>Remove</string>
+            </property>
+            <property name="icon">
+             <iconset resource="resources.qrc">
+              <normaloff>:/resources/minus.svg</normaloff>:/resources/minus.svg</iconset>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="Side_layout" stretch="0">
+          <item>
+           <widget class="QTabWidget" name="infoTab">
+            <property name="tabPosition">
+             <enum>QTabWidget::North</enum>
+            </property>
+            <property name="tabShape">
+             <enum>QTabWidget::Rounded</enum>
+            </property>
+            <property name="currentIndex">
+             <number>0</number>
+            </property>
+            <property name="documentMode">
+             <bool>false</bool>
+            </property>
+            <property name="tabsClosable">
+             <bool>false</bool>
+            </property>
+            <property name="movable">
+             <bool>false</bool>
+            </property>
+            <property name="tabBarAutoHide">
+             <bool>false</bool>
+            </property>
+            <widget class="QWidget" name="generalInfoTab">
+             <attribute name="icon">
+              <iconset resource="resources.qrc">
+               <normaloff>:/resources/settings.svg</normaloff>:/resources/settings.svg</iconset>
+             </attribute>
+             <attribute name="title">
+              <string>General</string>
+             </attribute>
+             <layout class="QVBoxLayout" name="verticalLayout_10">
+              <item>
+               <layout class="QVBoxLayout" name="verticalLayout_9" stretch="0,0,5,0">
+                <item>
+                 <layout class="QFormLayout" name="formLayout">
+                  <item row="0" column="0">
+                   <widget class="QLabel" name="titleLabel">
+                    <property name="text">
+                     <string>Titles:</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="1">
+                   <layout class="QHBoxLayout" name="horizontalLayout_3">
+                    <item>
+                     <widget class="QLabel" name="label">
+                      <property name="text">
+                       <string>Before:</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QLineEdit" name="titleEditF"/>
+                    </item>
+                    <item>
+                     <widget class="QLabel" name="titleLabelA">
+                      <property name="text">
+                       <string>After:</string>
+                      </property>
+                      <property name="textInteractionFlags">
+                       <set>Qt::NoTextInteraction</set>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QLineEdit" name="titleEditA"/>
+                    </item>
+                   </layout>
+                  </item>
+                  <item row="1" column="0">
+                   <widget class="QLabel" name="nameLabel">
+                    <property name="text">
+                     <string>Name:</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="1" column="1">
+                   <widget class="QLineEdit" name="nameEdit"/>
+                  </item>
+                  <item row="2" column="0">
+                   <widget class="QLabel" name="surnameLabel">
+                    <property name="text">
+                     <string>Surname:</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="2" column="1">
+                   <widget class="QLineEdit" name="surnameEdit"/>
+                  </item>
+                  <item row="3" column="0">
+                   <widget class="QLabel" name="maidenNameLabel">
+                    <property name="text">
+                     <string>Birth name:</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="3" column="1">
+                   <widget class="QLineEdit" name="maidenNameEdit"/>
+                  </item>
+                  <item row="4" column="0">
+                   <widget class="QLabel" name="genderLabel">
+                    <property name="text">
+                     <string>Gender:</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="4" column="1">
+                   <widget class="QComboBox" name="genderEdit">
+                    <property name="currentText">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="5" column="0">
+                   <widget class="QLabel" name="dateOfBirthLabel">
+                    <property name="enabled">
+                     <bool>true</bool>
+                    </property>
+                    <property name="text">
+                     <string>Date of birth:</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="5" column="1">
+                   <layout class="QHBoxLayout" name="horizontalLayout_6">
+                    <item>
+                     <widget class="QLineEdit" name="customBirthText">
+                      <property name="readOnly">
+                       <bool>true</bool>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QToolButton" name="customBirthDate">
+                      <property name="text">
+                       <string>...</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </item>
+                  <item row="6" column="0">
+                   <widget class="QLabel" name="placeOfBirthLabel">
+                    <property name="text">
+                     <string>Place of birth:</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="6" column="1">
+                   <widget class="QLineEdit" name="placeOfBirthEdit"/>
+                  </item>
+                  <item row="7" column="0">
+                   <widget class="QLabel" name="dateOfDeathLabel">
+                    <property name="text">
+                     <string>Date of death:</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="7" column="1">
+                   <layout class="QHBoxLayout" name="horizontalLayout_7">
+                    <item>
+                     <widget class="QCheckBox" name="isAlive">
+                      <property name="layoutDirection">
+                       <enum>Qt::LeftToRight</enum>
+                      </property>
+                      <property name="text">
+                       <string>Alive</string>
+                      </property>
+                      <property name="checked">
+                       <bool>true</bool>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QLineEdit" name="customDeathText">
+                      <property name="readOnly">
+                       <bool>true</bool>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QToolButton" name="customDeathDate">
+                      <property name="text">
+                       <string>...</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </item>
+                  <item row="8" column="0">
+                   <widget class="QLabel" name="placeOfDeathLabel">
+                    <property name="text">
+                     <string>Place of death:</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="8" column="1">
+                   <widget class="QLineEdit" name="placeOfDeathEdit"/>
+                  </item>
+                 </layout>
+                </item>
+                <item>
+                 <widget class="QLabel" name="tagsLabel">
+                  <property name="text">
+                   <string>Tags:</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QTreeWidget" name="tagWidget">
+                  <property name="sizeAdjustPolicy">
+                   <enum>QAbstractScrollArea::AdjustToContents</enum>
+                  </property>
+                  <property name="alternatingRowColors">
+                   <bool>true</bool>
+                  </property>
+                  <property name="columnCount">
+                   <number>2</number>
+                  </property>
+                  <column>
+                   <property name="text">
+                    <string notr="true">1</string>
+                   </property>
+                  </column>
+                  <column>
+                   <property name="text">
+                    <string notr="true">2</string>
+                   </property>
+                  </column>
+                 </widget>
+                </item>
+                <item>
+                 <layout class="QHBoxLayout" name="horizontalLayout_11">
+                  <item>
+                   <widget class="QPushButton" name="addTagButton">
+                    <property name="text">
+                     <string>Add</string>
+                    </property>
+                    <property name="icon">
+                     <iconset resource="resources.qrc">
+                      <normaloff>:/resources/plus.svg</normaloff>:/resources/plus.svg</iconset>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="removeTagButton">
+                    <property name="text">
+                     <string>Remove</string>
+                    </property>
+                    <property name="icon">
+                     <iconset resource="resources.qrc">
+                      <normaloff>:/resources/trash.svg</normaloff>:/resources/trash.svg</iconset>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="relationsTab">
+             <attribute name="icon">
+              <iconset resource="resources.qrc">
+               <normaloff>:/resources/relation.svg</normaloff>:/resources/relation.svg</iconset>
+             </attribute>
+             <attribute name="title">
+              <string>Relations</string>
+             </attribute>
+             <layout class="QVBoxLayout" name="verticalLayout_3" stretch="0,0,1,0,1,0,1">
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout_2">
+                <item>
+                 <widget class="QPushButton" name="addRelationButton">
+                  <property name="text">
+                   <string>Add</string>
+                  </property>
+                  <property name="icon">
+                   <iconset resource="resources.qrc">
+                    <normaloff>:/resources/relation.svg</normaloff>:/resources/relation.svg</iconset>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="removeRelationButton">
+                  <property name="text">
+                   <string>Remove</string>
+                  </property>
+                  <property name="icon">
+                   <iconset resource="resources.qrc">
+                    <normaloff>:/resources/trash.svg</normaloff>:/resources/trash.svg</iconset>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="promoteButton">
+                  <property name="text">
+                   <string>Promote</string>
+                  </property>
+                  <property name="icon">
+                   <iconset resource="resources.qrc">
+                    <normaloff>:/resources/promote.svg</normaloff>:/resources/promote.svg</iconset>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <widget class="QLabel" name="label_2">
+                <property name="text">
+                 <string>Older generation:</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QTreeWidget" name="olderGenerationWidget">
+                <property name="sizeAdjustPolicy">
+                 <enum>QAbstractScrollArea::AdjustToContents</enum>
+                </property>
+                <property name="alternatingRowColors">
+                 <bool>true</bool>
+                </property>
+                <property name="columnCount">
+                 <number>2</number>
+                </property>
+                <column>
+                 <property name="text">
+                  <string notr="true">1</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string notr="true">2</string>
+                 </property>
+                </column>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLabel" name="label_3">
+                <property name="text">
+                 <string>Same generation:</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QTreeWidget" name="sameGenerationWidget">
+                <property name="sizeAdjustPolicy">
+                 <enum>QAbstractScrollArea::AdjustToContents</enum>
+                </property>
+                <property name="alternatingRowColors">
+                 <bool>true</bool>
+                </property>
+                <property name="columnCount">
+                 <number>2</number>
+                </property>
+                <column>
+                 <property name="text">
+                  <string notr="true">1</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string notr="true">2</string>
+                 </property>
+                </column>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLabel" name="label_4">
+                <property name="text">
+                 <string>Younger generation:</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QTreeWidget" name="youngerGenerationWidget">
+                <property name="sizeAdjustPolicy">
+                 <enum>QAbstractScrollArea::AdjustToContents</enum>
+                </property>
+                <property name="alternatingRowColors">
+                 <bool>true</bool>
+                </property>
+                <property name="columnCount">
+                 <number>2</number>
+                </property>
+                <column>
+                 <property name="text">
+                  <string notr="true">1</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string notr="true">2</string>
+                 </property>
+                </column>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="eventsTab">
+             <attribute name="icon">
+              <iconset resource="resources.qrc">
+               <normaloff>:/resources/event.svg</normaloff>:/resources/event.svg</iconset>
+             </attribute>
+             <attribute name="title">
+              <string>Events</string>
+             </attribute>
+             <layout class="QVBoxLayout" name="verticalLayout">
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout_17">
+                <item>
+                 <widget class="QPushButton" name="addEvent">
+                  <property name="text">
+                   <string>Add</string>
+                  </property>
+                  <property name="icon">
+                   <iconset resource="resources.qrc">
+                    <normaloff>:/resources/event.svg</normaloff>:/resources/event.svg</iconset>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="removeEvent">
+                  <property name="text">
+                   <string>Remove</string>
+                  </property>
+                  <property name="icon">
+                   <iconset resource="resources.qrc">
+                    <normaloff>:/resources/trash.svg</normaloff>:/resources/trash.svg</iconset>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <widget class="QTreeWidget" name="eventWidget">
+                <property name="sizeAdjustPolicy">
+                 <enum>QAbstractScrollArea::AdjustToContents</enum>
+                </property>
+                <property name="alternatingRowColors">
+                 <bool>true</bool>
+                </property>
+                <property name="columnCount">
+                 <number>3</number>
+                </property>
+                <column>
+                 <property name="text">
+                  <string notr="true">1</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string notr="true">2</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string notr="true">3</string>
+                 </property>
+                </column>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="fileTab">
+             <attribute name="icon">
+              <iconset resource="resources.qrc">
+               <normaloff>:/resources/file.svg</normaloff>:/resources/file.svg</iconset>
+             </attribute>
+             <attribute name="title">
+              <string>Files</string>
+             </attribute>
+             <layout class="QVBoxLayout" name="verticalLayout_5" stretch="0,2">
+              <item>
+               <widget class="QStackedWidget" name="fileStack">
+                <property name="currentIndex">
+                 <number>0</number>
+                </property>
+                <widget class="QWidget" name="page_7">
+                 <layout class="QVBoxLayout" name="verticalLayout_4">
+                  <item>
+                   <layout class="QHBoxLayout" name="horizontalLayout_8">
+                    <item>
+                     <widget class="QPushButton" name="addFileButton">
+                      <property name="text">
+                       <string>Add file</string>
+                      </property>
+                      <property name="icon">
+                       <iconset resource="resources.qrc">
+                        <normaloff>:/resources/file.svg</normaloff>:/resources/file.svg</iconset>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QPushButton" name="addFolderFileButton">
+                      <property name="text">
+                       <string>Add folder</string>
+                      </property>
+                      <property name="icon">
+                       <iconset resource="resources.qrc">
+                        <normaloff>:/resources/folder.svg</normaloff>:/resources/folder.svg</iconset>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </item>
+                  <item>
+                   <layout class="QHBoxLayout" name="horizontalLayout_10">
+                    <item>
+                     <widget class="QPushButton" name="renameFileButton">
+                      <property name="text">
+                       <string>Rename</string>
+                      </property>
+                      <property name="icon">
+                       <iconset resource="resources.qrc">
+                        <normaloff>:/resources/rename.svg</normaloff>:/resources/rename.svg</iconset>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QPushButton" name="removeFileButton">
+                      <property name="text">
+                       <string>Remove</string>
+                      </property>
+                      <property name="icon">
+                       <iconset resource="resources.qrc">
+                        <normaloff>:/resources/trash.svg</normaloff>:/resources/trash.svg</iconset>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </item>
+                 </layout>
+                </widget>
+                <widget class="QWidget" name="page_8">
+                 <layout class="QVBoxLayout" name="verticalLayout_8">
+                  <item>
+                   <layout class="QVBoxLayout" name="verticalLayout_11">
+                    <item>
+                     <widget class="QLineEdit" name="folderFileEdit"/>
+                    </item>
+                    <item>
+                     <layout class="QHBoxLayout" name="horizontalLayout_18">
+                      <item>
+                       <spacer name="horizontalSpacer_3">
+                        <property name="orientation">
+                         <enum>Qt::Horizontal</enum>
+                        </property>
+                        <property name="sizeHint" stdset="0">
+                         <size>
+                          <width>40</width>
+                          <height>20</height>
+                         </size>
+                        </property>
+                       </spacer>
+                      </item>
+                      <item>
+                       <widget class="QPushButton" name="okFolderFileButton">
+                        <property name="text">
+                         <string>OK</string>
+                        </property>
+                        <property name="icon">
+                         <iconset resource="resources.qrc">
+                          <normaloff>:/resources/OK.svg</normaloff>:/resources/OK.svg</iconset>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QPushButton" name="cancelFolderFileButton">
+                        <property name="text">
+                         <string>Cancel</string>
+                        </property>
+                        <property name="icon">
+                         <iconset resource="resources.qrc">
+                          <normaloff>:/resources/Cancel.svg</normaloff>:/resources/Cancel.svg</iconset>
+                        </property>
+                       </widget>
+                      </item>
+                     </layout>
+                    </item>
+                   </layout>
+                  </item>
+                 </layout>
+                </widget>
+                <widget class="QWidget" name="page_13">
+                 <layout class="QVBoxLayout" name="verticalLayout_17">
+                  <item>
+                   <layout class="QVBoxLayout" name="verticalLayout_21">
+                    <item>
+                     <widget class="QLineEdit" name="fileRenameEdit"/>
+                    </item>
+                    <item>
+                     <layout class="QHBoxLayout" name="horizontalLayout_21">
+                      <item>
+                       <spacer name="horizontalSpacer_4">
+                        <property name="orientation">
+                         <enum>Qt::Horizontal</enum>
+                        </property>
+                        <property name="sizeHint" stdset="0">
+                         <size>
+                          <width>40</width>
+                          <height>20</height>
+                         </size>
+                        </property>
+                       </spacer>
+                      </item>
+                      <item>
+                       <widget class="QPushButton" name="okFolderFileRename">
+                        <property name="text">
+                         <string>OK</string>
+                        </property>
+                        <property name="icon">
+                         <iconset resource="resources.qrc">
+                          <normaloff>:/resources/OK.svg</normaloff>:/resources/OK.svg</iconset>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QPushButton" name="cancelFolderFileRename">
+                        <property name="text">
+                         <string>Cancel</string>
+                        </property>
+                        <property name="icon">
+                         <iconset resource="resources.qrc">
+                          <normaloff>:/resources/Cancel.svg</normaloff>:/resources/Cancel.svg</iconset>
+                        </property>
+                       </widget>
+                      </item>
+                     </layout>
+                    </item>
+                   </layout>
+                  </item>
+                 </layout>
+                </widget>
+               </widget>
+              </item>
+              <item>
+               <widget class="QTreeWidget" name="fileTreeWidget">
+                <property name="itemsExpandable">
+                 <bool>false</bool>
+                </property>
+                <attribute name="headerVisible">
+                 <bool>false</bool>
+                </attribute>
+                <column>
+                 <property name="text">
+                  <string notr="true">1</string>
+                 </property>
+                </column>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="mediaTab">
+             <attribute name="icon">
+              <iconset resource="resources.qrc">
+               <normaloff>:/resources/media.svg</normaloff>:/resources/media.svg</iconset>
+             </attribute>
+             <attribute name="title">
+              <string>Media</string>
+             </attribute>
+             <layout class="QVBoxLayout" name="verticalLayout_6" stretch="0,1">
+              <item>
+               <widget class="QStackedWidget" name="mediaStack">
+                <property name="currentIndex">
+                 <number>0</number>
+                </property>
+                <widget class="QWidget" name="page_9">
+                 <layout class="QVBoxLayout" name="verticalLayout_13">
+                  <item>
+                   <layout class="QHBoxLayout" name="horizontalLayout_5">
+                    <item>
+                     <widget class="QPushButton" name="addMediaButton">
+                      <property name="text">
+                       <string>Add Media</string>
+                      </property>
+                      <property name="icon">
+                       <iconset resource="resources.qrc">
+                        <normaloff>:/resources/media.svg</normaloff>:/resources/media.svg</iconset>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QPushButton" name="addFolderMediaButton">
+                      <property name="text">
+                       <string>Add folder</string>
+                      </property>
+                      <property name="icon">
+                       <iconset resource="resources.qrc">
+                        <normaloff>:/resources/folder.svg</normaloff>:/resources/folder.svg</iconset>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </item>
+                  <item>
+                   <layout class="QHBoxLayout" name="horizontalLayout_16">
+                    <item>
+                     <widget class="QPushButton" name="renameMediaButton">
+                      <property name="text">
+                       <string>Rename</string>
+                      </property>
+                      <property name="icon">
+                       <iconset resource="resources.qrc">
+                        <normaloff>:/resources/rename.svg</normaloff>:/resources/rename.svg</iconset>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QPushButton" name="removeMediaButton">
+                      <property name="text">
+                       <string>Remove</string>
+                      </property>
+                      <property name="icon">
+                       <iconset resource="resources.qrc">
+                        <normaloff>:/resources/trash.svg</normaloff>:/resources/trash.svg</iconset>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </item>
+                 </layout>
+                </widget>
+                <widget class="QWidget" name="page_10">
+                 <layout class="QVBoxLayout" name="verticalLayout_14">
+                  <item>
+                   <layout class="QVBoxLayout" name="verticalLayout_22">
+                    <item>
+                     <widget class="QLineEdit" name="folderMediaEdit"/>
+                    </item>
+                    <item>
+                     <layout class="QHBoxLayout" name="horizontalLayout_19">
+                      <item>
+                       <spacer name="horizontalSpacer_5">
+                        <property name="orientation">
+                         <enum>Qt::Horizontal</enum>
+                        </property>
+                        <property name="sizeHint" stdset="0">
+                         <size>
+                          <width>40</width>
+                          <height>20</height>
+                         </size>
+                        </property>
+                       </spacer>
+                      </item>
+                      <item>
+                       <widget class="QPushButton" name="okFolderMediaButton">
+                        <property name="text">
+                         <string>OK</string>
+                        </property>
+                        <property name="icon">
+                         <iconset resource="resources.qrc">
+                          <normaloff>:/resources/OK.svg</normaloff>:/resources/OK.svg</iconset>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QPushButton" name="cancelFolderMediaButton">
+                        <property name="text">
+                         <string>Cancel</string>
+                        </property>
+                        <property name="icon">
+                         <iconset resource="resources.qrc">
+                          <normaloff>:/resources/Cancel.svg</normaloff>:/resources/Cancel.svg</iconset>
+                        </property>
+                       </widget>
+                      </item>
+                     </layout>
+                    </item>
+                   </layout>
+                  </item>
+                 </layout>
+                </widget>
+                <widget class="QWidget" name="page_14">
+                 <layout class="QVBoxLayout" name="verticalLayout_18">
+                  <item>
+                   <layout class="QVBoxLayout" name="verticalLayout_23">
+                    <item>
+                     <widget class="QLineEdit" name="mediaRenameEdit"/>
+                    </item>
+                    <item>
+                     <layout class="QHBoxLayout" name="horizontalLayout_22">
+                      <item>
+                       <spacer name="horizontalSpacer_6">
+                        <property name="orientation">
+                         <enum>Qt::Horizontal</enum>
+                        </property>
+                        <property name="sizeHint" stdset="0">
+                         <size>
+                          <width>40</width>
+                          <height>20</height>
+                         </size>
+                        </property>
+                       </spacer>
+                      </item>
+                      <item>
+                       <widget class="QPushButton" name="okFolderMediaRename">
+                        <property name="text">
+                         <string>OK</string>
+                        </property>
+                        <property name="icon">
+                         <iconset resource="resources.qrc">
+                          <normaloff>:/resources/OK.svg</normaloff>:/resources/OK.svg</iconset>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QPushButton" name="cancelFolderMediaRename">
+                        <property name="text">
+                         <string>Cancel</string>
+                        </property>
+                        <property name="icon">
+                         <iconset resource="resources.qrc">
+                          <normaloff>:/resources/Cancel.svg</normaloff>:/resources/Cancel.svg</iconset>
+                        </property>
+                       </widget>
+                      </item>
+                     </layout>
+                    </item>
+                   </layout>
+                  </item>
+                 </layout>
+                </widget>
+               </widget>
+              </item>
+              <item>
+               <widget class="QTreeWidget" name="mediaTreeWidget">
+                <property name="itemsExpandable">
+                 <bool>false</bool>
+                </property>
+                <attribute name="headerVisible">
+                 <bool>false</bool>
+                </attribute>
+                <column>
+                 <property name="text">
+                  <string notr="true">1</string>
+                 </property>
+                </column>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="notesTab">
+             <attribute name="icon">
+              <iconset resource="resources.qrc">
+               <normaloff>:/resources/note.svg</normaloff>:/resources/note.svg</iconset>
+             </attribute>
+             <attribute name="title">
+              <string>Notes</string>
+             </attribute>
+             <layout class="QVBoxLayout" name="verticalLayout_7" stretch="0,1">
+              <item>
+               <widget class="QStackedWidget" name="noteStack">
+                <property name="currentIndex">
+                 <number>0</number>
+                </property>
+                <widget class="QWidget" name="page_11">
+                 <layout class="QVBoxLayout" name="verticalLayout_15">
+                  <item>
+                   <layout class="QHBoxLayout" name="horizontalLayout_4">
+                    <item>
+                     <widget class="QPushButton" name="addNoteButton">
+                      <property name="text">
+                       <string>Add note</string>
+                      </property>
+                      <property name="icon">
+                       <iconset resource="resources.qrc">
+                        <normaloff>:/resources/note.svg</normaloff>:/resources/note.svg</iconset>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QPushButton" name="addFolderNoteButton">
+                      <property name="text">
+                       <string>Add folder</string>
+                      </property>
+                      <property name="icon">
+                       <iconset resource="resources.qrc">
+                        <normaloff>:/resources/folder.svg</normaloff>:/resources/folder.svg</iconset>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </item>
+                  <item>
+                   <layout class="QHBoxLayout" name="horizontalLayout_15">
+                    <item>
+                     <widget class="QPushButton" name="renameNoteButton">
+                      <property name="text">
+                       <string>Rename</string>
+                      </property>
+                      <property name="icon">
+                       <iconset resource="resources.qrc">
+                        <normaloff>:/resources/rename.svg</normaloff>:/resources/rename.svg</iconset>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QPushButton" name="removeNoteButton">
+                      <property name="text">
+                       <string>Remove</string>
+                      </property>
+                      <property name="icon">
+                       <iconset resource="resources.qrc">
+                        <normaloff>:/resources/trash.svg</normaloff>:/resources/trash.svg</iconset>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </item>
+                 </layout>
+                </widget>
+                <widget class="QWidget" name="page_12">
+                 <layout class="QVBoxLayout" name="verticalLayout_16">
+                  <item>
+                   <layout class="QVBoxLayout" name="verticalLayout_24">
+                    <item>
+                     <widget class="QLineEdit" name="folderNoteEdit"/>
+                    </item>
+                    <item>
+                     <layout class="QHBoxLayout" name="horizontalLayout_20">
+                      <item>
+                       <spacer name="horizontalSpacer_7">
+                        <property name="orientation">
+                         <enum>Qt::Horizontal</enum>
+                        </property>
+                        <property name="sizeHint" stdset="0">
+                         <size>
+                          <width>40</width>
+                          <height>20</height>
+                         </size>
+                        </property>
+                       </spacer>
+                      </item>
+                      <item>
+                       <widget class="QPushButton" name="okFolderNoteButton">
+                        <property name="text">
+                         <string>OK</string>
+                        </property>
+                        <property name="icon">
+                         <iconset resource="resources.qrc">
+                          <normaloff>:/resources/OK.svg</normaloff>:/resources/OK.svg</iconset>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QPushButton" name="cancelFolderNoteButton">
+                        <property name="text">
+                         <string>Cancel</string>
+                        </property>
+                        <property name="icon">
+                         <iconset resource="resources.qrc">
+                          <normaloff>:/resources/Cancel.svg</normaloff>:/resources/Cancel.svg</iconset>
+                        </property>
+                       </widget>
+                      </item>
+                     </layout>
+                    </item>
+                   </layout>
+                  </item>
+                 </layout>
+                </widget>
+                <widget class="QWidget" name="page_15">
+                 <layout class="QVBoxLayout" name="verticalLayout_19">
+                  <item>
+                   <layout class="QVBoxLayout" name="verticalLayout_25">
+                    <item>
+                     <widget class="QLineEdit" name="noteRenameEdit"/>
+                    </item>
+                    <item>
+                     <layout class="QHBoxLayout" name="horizontalLayout_23">
+                      <item>
+                       <spacer name="horizontalSpacer_8">
+                        <property name="orientation">
+                         <enum>Qt::Horizontal</enum>
+                        </property>
+                        <property name="sizeHint" stdset="0">
+                         <size>
+                          <width>40</width>
+                          <height>20</height>
+                         </size>
+                        </property>
+                       </spacer>
+                      </item>
+                      <item>
+                       <widget class="QPushButton" name="okFolderNoteRename">
+                        <property name="text">
+                         <string>OK</string>
+                        </property>
+                        <property name="icon">
+                         <iconset resource="resources.qrc">
+                          <normaloff>:/resources/OK.svg</normaloff>:/resources/OK.svg</iconset>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QPushButton" name="cancelFolderNoteRename">
+                        <property name="text">
+                         <string>Cancel</string>
+                        </property>
+                        <property name="icon">
+                         <iconset resource="resources.qrc">
+                          <normaloff>:/resources/Cancel.svg</normaloff>:/resources/Cancel.svg</iconset>
+                        </property>
+                       </widget>
+                      </item>
+                     </layout>
+                    </item>
+                   </layout>
+                  </item>
+                 </layout>
+                </widget>
+               </widget>
+              </item>
+              <item>
+               <widget class="QTreeWidget" name="noteTreeWidget">
+                <property name="itemsExpandable">
+                 <bool>false</bool>
+                </property>
+                <attribute name="headerVisible">
+                 <bool>false</bool>
+                </attribute>
+                <column>
+                 <property name="text">
+                  <string notr="true">1</string>
+                 </property>
+                </column>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QGroupBox" name="groupBox">
+       <property name="title">
+        <string/>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QTabWidget" name="mainTabWidget">
+          <property name="currentIndex">
+           <number>0</number>
+          </property>
+          <widget class="QWidget" name="tab_2">
+           <attribute name="icon">
+            <iconset resource="resources.qrc">
+             <normaloff>:/resources/project.svg</normaloff>:/resources/project.svg</iconset>
+           </attribute>
+           <attribute name="title">
+            <string>Project overview</string>
+           </attribute>
+           <layout class="QVBoxLayout" name="verticalLayout_20">
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_14">
+              <item>
+               <widget class="QLabel" name="label_6">
+                <property name="text">
+                 <string>Show:</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QCheckBox" name="showRelations">
+                <property name="text">
+                 <string>relations</string>
+                </property>
+                <property name="checked">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QCheckBox" name="showEvents">
+                <property name="text">
+                 <string>events</string>
+                </property>
+                <property name="checked">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QCheckBox" name="showFiles">
+                <property name="text">
+                 <string>files</string>
+                </property>
+                <property name="checked">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QCheckBox" name="showNotes">
+                <property name="text">
+                 <string>notes</string>
+                </property>
+                <property name="checked">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QCheckBox" name="showMedia">
+                <property name="text">
+                 <string>media</string>
+                </property>
+                <property name="checked">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <spacer name="horizontalSpacer">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
+               <widget class="QPushButton" name="expandAll">
+                <property name="text">
+                 <string>Expand all</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="collapseAll">
+                <property name="text">
+                 <string>Collapse all</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <spacer name="horizontalSpacer_2">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
+               <widget class="QLabel" name="findLabel">
+                <property name="text">
+                 <string>Filter:</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLineEdit" name="findEdit"/>
+              </item>
+              <item>
+               <widget class="QPushButton" name="findProjectView">
+                <property name="text">
+                 <string>Filter</string>
+                </property>
+                <property name="icon">
+                 <iconset resource="resources.qrc">
+                  <normaloff>:/resources/find.svg</normaloff>:/resources/find.svg</iconset>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="clearProjectFilter">
+                <property name="text">
+                 <string>Clear</string>
+                </property>
+                <property name="icon">
+                 <iconset resource="resources.qrc">
+                  <normaloff>:/resources/clearFilter.svg</normaloff>:/resources/clearFilter.svg</iconset>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <widget class="QTreeWidget" name="projectView">
+              <property name="sizeAdjustPolicy">
+               <enum>QAbstractScrollArea::AdjustToContents</enum>
+              </property>
+              <property name="alternatingRowColors">
+               <bool>true</bool>
+              </property>
+              <property name="columnCount">
+               <number>4</number>
+              </property>
+              <attribute name="headerVisible">
+               <bool>true</bool>
+              </attribute>
+              <attribute name="headerCascadingSectionResizes">
+               <bool>false</bool>
+              </attribute>
+              <attribute name="headerMinimumSectionSize">
+               <number>100</number>
+              </attribute>
+              <attribute name="headerDefaultSectionSize">
+               <number>200</number>
+              </attribute>
+              <attribute name="headerHighlightSections">
+               <bool>false</bool>
+              </attribute>
+              <attribute name="headerStretchLastSection">
+               <bool>true</bool>
+              </attribute>
+              <column>
+               <property name="text">
+                <string notr="true">1</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string notr="true">2</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string notr="true">3</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string notr="true">4</string>
+               </property>
+              </column>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="tab">
+           <attribute name="icon">
+            <iconset resource="resources.qrc">
+             <normaloff>:/resources/closeFamily.svg</normaloff>:/resources/closeFamily.svg</iconset>
+           </attribute>
+           <attribute name="title">
+            <string>Close family</string>
+           </attribute>
+           <layout class="QVBoxLayout" name="verticalLayout_2">
+            <item>
+             <widget class="QGraphicsView" name="treeGraphics"/>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="tab_3">
+           <attribute name="icon">
+            <iconset resource="resources.qrc">
+             <normaloff>:/resources/diagram.svg</normaloff>:/resources/diagram.svg</iconset>
+           </attribute>
+           <attribute name="title">
+            <string>Tree view</string>
+           </attribute>
+           <layout class="QVBoxLayout" name="verticalLayout_26" stretch="0,4">
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_26">
+              <item>
+               <widget class="QLabel" name="label_5">
+                <property name="text">
+                 <string>Number of shown generations:</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QCheckBox" name="allGenerationsAbove">
+                <property name="text">
+                 <string>Show all generations above</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QSpinBox" name="generationsNumberAbove">
+                <property name="minimum">
+                 <number>0</number>
+                </property>
+                <property name="maximum">
+                 <number>999</number>
+                </property>
+                <property name="value">
+                 <number>0</number>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QCheckBox" name="allGenerationsBelow">
+                <property name="text">
+                 <string>Show all generations below</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QSpinBox" name="generationsNumberBelow">
+                <property name="maximum">
+                 <number>999</number>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <spacer name="horizontalSpacer_9">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
+               <widget class="QPushButton" name="centerTreeView">
+                <property name="text">
+                 <string>Fit in view</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="zoomInTreeView">
+                <property name="text">
+                 <string>Zoom in</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="zoomOutTreeView">
+                <property name="text">
+                 <string>Zoom out</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QVBoxLayout" name="treeViewLayout"/>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1628</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <widget class="QMenu" name="menuRecent_trees">
+     <property name="title">
+      <string>Recent trees</string>
+     </property>
+     <property name="icon">
+      <iconset resource="resources.qrc">
+       <normaloff>:/resources/recent.svg</normaloff>:/resources/recent.svg</iconset>
+     </property>
+     <addaction name="actionClear_paths"/>
+    </widget>
+    <addaction name="actionNew"/>
+    <addaction name="actionOpen"/>
+    <addaction name="menuRecent_trees"/>
+    <addaction name="separator"/>
+    <addaction name="actionSave"/>
+   </widget>
+   <widget class="QMenu" name="menuSettings">
+    <property name="title">
+     <string>Settings</string>
+    </property>
+    <widget class="QMenu" name="menuTab_position">
+     <property name="tearOffEnabled">
+      <bool>false</bool>
+     </property>
+     <property name="title">
+      <string>Position of tabs</string>
+     </property>
+     <addaction name="actionNorth"/>
+     <addaction name="actionSouth"/>
+     <addaction name="actionWest"/>
+     <addaction name="actionEast"/>
+    </widget>
+    <addaction name="menuTab_position"/>
+    <addaction name="separator"/>
+    <addaction name="actionGraphics_settings"/>
+   </widget>
+   <widget class="QMenu" name="menuImport">
+    <property name="title">
+     <string>Export</string>
+    </property>
+    <addaction name="actionWebpage_for_a_person"/>
+    <addaction name="actionWebpage_for_all_persons"/>
+    <addaction name="separator"/>
+    <addaction name="actionRodoc_project"/>
+    <addaction name="actionRodoc_configuration"/>
+    <addaction name="separator"/>
+    <addaction name="actionPicture_of_close_family"/>
+    <addaction name="actionFamily_tree_diagram"/>
+   </widget>
+   <widget class="QMenu" name="menuExport">
+    <property name="title">
+     <string>Import</string>
+    </property>
+    <addaction name="actionRodoc_project_import"/>
+    <addaction name="actionRodoc_templates"/>
+    <addaction name="actionRoot_directory"/>
+   </widget>
+   <widget class="QMenu" name="menuView">
+    <property name="title">
+     <string>View</string>
+    </property>
+    <addaction name="actionFind"/>
+    <addaction name="actionShow_General"/>
+    <addaction name="actionShow_Relations"/>
+    <addaction name="actionShow_Events"/>
+    <addaction name="actionShow_Files"/>
+    <addaction name="actionShow_Media"/>
+    <addaction name="actionShow_Notes"/>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="tearOffEnabled">
+     <bool>false</bool>
+    </property>
+    <property name="title">
+     <string>Help</string>
+    </property>
+    <addaction name="actionShow_help"/>
+   </widget>
+   <widget class="QMenu" name="menuTemplates">
+    <property name="title">
+     <string>Templates</string>
+    </property>
+    <addaction name="actionRelation_templates_editor"/>
+    <addaction name="actionEvent_templates_editor"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuView"/>
+   <addaction name="menuSettings"/>
+   <addaction name="menuTemplates"/>
+   <addaction name="menuImport"/>
+   <addaction name="menuExport"/>
+   <addaction name="menuHelp"/>
+  </widget>
+  <action name="actionSave">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/resources/multiSave.svg</normaloff>:/resources/multiSave.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Save</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="actionNorth">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>North</string>
+   </property>
+  </action>
+  <action name="actionSouth">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>South</string>
+   </property>
+  </action>
+  <action name="actionWest">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>West</string>
+   </property>
+  </action>
+  <action name="actionEast">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>East</string>
+   </property>
+  </action>
+  <action name="actionMovable_tabs">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Movable tabs</string>
+   </property>
+  </action>
+  <action name="actionTest">
+   <property name="text">
+    <string>Test</string>
+   </property>
+  </action>
+  <action name="actionSwitch_profile">
+   <property name="text">
+    <string>Switch profile</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Right</string>
+   </property>
+  </action>
+  <action name="actionReverse_switch_profile">
+   <property name="text">
+    <string>Reverse switch profile</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Left</string>
+   </property>
+  </action>
+  <action name="actionFind">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/resources/find.svg</normaloff>:/resources/find.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Find</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+F</string>
+   </property>
+  </action>
+  <action name="actionShow_General">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Show General</string>
+   </property>
+  </action>
+  <action name="actionShow_Relations">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Show Relations</string>
+   </property>
+  </action>
+  <action name="actionShow_Events">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Show Events</string>
+   </property>
+  </action>
+  <action name="actionShow_Files">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Show Files</string>
+   </property>
+  </action>
+  <action name="actionShow_Media">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Show Media</string>
+   </property>
+  </action>
+  <action name="actionShow_Notes">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Show Notes</string>
+   </property>
+  </action>
+  <action name="actionOpen">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/resources/databse.svg</normaloff>:/resources/databse.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Open</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="actionNew">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/resources/createDatabase.svg</normaloff>:/resources/createDatabase.svg</iconset>
+   </property>
+   <property name="text">
+    <string>New</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
+   </property>
+  </action>
+  <action name="actionRelation_templates">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/resources/relation.svg</normaloff>:/resources/relation.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Relation templates</string>
+   </property>
+  </action>
+  <action name="actionEvent_templates">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/resources/event.svg</normaloff>:/resources/event.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Event templates</string>
+   </property>
+  </action>
+  <action name="actionWindow_layout">
+   <property name="text">
+    <string>Window layout</string>
+   </property>
+  </action>
+  <action name="actionPersons_information">
+   <property name="text">
+    <string>Persons information</string>
+   </property>
+  </action>
+  <action name="actionRelations_and_templates">
+   <property name="text">
+    <string>Relations and templates</string>
+   </property>
+  </action>
+  <action name="actionEvents_and_templates">
+   <property name="text">
+    <string>Events and templates</string>
+   </property>
+  </action>
+  <action name="actionFiles_Notes_Media">
+   <property name="text">
+    <string>Files, Notes, Media</string>
+   </property>
+  </action>
+  <action name="actionWebpage_for_a_person">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/resources/print.svg</normaloff>:/resources/print.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Webpage for a person</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+W</string>
+   </property>
+  </action>
+  <action name="actionWebpage_for_all_persons">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/resources/print.svg</normaloff>:/resources/print.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Webpages for all persons</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+W</string>
+   </property>
+  </action>
+  <action name="actionRodoc_project">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/resources/export.svg</normaloff>:/resources/export.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Rodoc project</string>
+   </property>
+  </action>
+  <action name="actionRodoc_project_import">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/resources/import.svg</normaloff>:/resources/import.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Rodoc project</string>
+   </property>
+  </action>
+  <action name="actionRodoc_configuration">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/resources/export.svg</normaloff>:/resources/export.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Rodoc templates</string>
+   </property>
+  </action>
+  <action name="actionClear">
+   <property name="text">
+    <string>Clear</string>
+   </property>
+  </action>
+  <action name="actionClear_paths">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/resources/trash.svg</normaloff>:/resources/trash.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Clear</string>
+   </property>
+  </action>
+  <action name="actionProbant_color">
+   <property name="text">
+    <string>Probant color</string>
+   </property>
+  </action>
+  <action name="actionSpecial_color">
+   <property name="text">
+    <string>Special color</string>
+   </property>
+  </action>
+  <action name="actionStandard_color">
+   <property name="text">
+    <string>Standard color</string>
+   </property>
+  </action>
+  <action name="actionSize_of_box">
+   <property name="text">
+    <string>Size of box</string>
+   </property>
+  </action>
+  <action name="actionAdd_default_relation_templates">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/resources/relation.svg</normaloff>:/resources/relation.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Add default relation templates</string>
+   </property>
+  </action>
+  <action name="actionAdd_default_event_templates">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/resources/event.svg</normaloff>:/resources/event.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Add default event templates</string>
+   </property>
+  </action>
+  <action name="actionPicture_of_close_family">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/resources/closeFamily.svg</normaloff>:/resources/closeFamily.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Close family diagram</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+D</string>
+   </property>
+  </action>
+  <action name="actionFamily_tree_diagram">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/resources/diagram.svg</normaloff>:/resources/diagram.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Family tree diagram</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+D</string>
+   </property>
+  </action>
+  <action name="actionRodoc_templates">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/resources/import.svg</normaloff>:/resources/import.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Rodoc templates</string>
+   </property>
+  </action>
+  <action name="actionGraphics_settings">
+   <property name="text">
+    <string>Visual settings</string>
+   </property>
+  </action>
+  <action name="actionRoot_directory">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/resources/import.svg</normaloff>:/resources/import.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Root directory</string>
+   </property>
+  </action>
+  <action name="actionRelation_templates_editor">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/resources/relation.svg</normaloff>:/resources/relation.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Relation templates</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+R</string>
+   </property>
+  </action>
+  <action name="actionEvent_templates_editor">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/resources/event.svg</normaloff>:/resources/event.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Event templates</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+E</string>
+   </property>
+  </action>
+  <action name="actionShow_help">
+   <property name="text">
+    <string>Show help</string>
+   </property>
+  </action>
+ </widget>
+ <tabstops>
+  <tabstop>tagWidget</tabstop>
+  <tabstop>addTagButton</tabstop>
+  <tabstop>removeTagButton</tabstop>
+  <tabstop>infoTab</tabstop>
+  <tabstop>olderGenerationWidget</tabstop>
+  <tabstop>sameGenerationWidget</tabstop>
+  <tabstop>youngerGenerationWidget</tabstop>
+  <tabstop>addRelationButton</tabstop>
+  <tabstop>removeRelationButton</tabstop>
+  <tabstop>promoteButton</tabstop>
+  <tabstop>eventWidget</tabstop>
+  <tabstop>addEvent</tabstop>
+  <tabstop>removeEvent</tabstop>
+  <tabstop>fileTreeWidget</tabstop>
+  <tabstop>addFileButton</tabstop>
+  <tabstop>addFolderFileButton</tabstop>
+  <tabstop>renameFileButton</tabstop>
+  <tabstop>removeFileButton</tabstop>
+  <tabstop>mediaTreeWidget</tabstop>
+  <tabstop>addMediaButton</tabstop>
+  <tabstop>addFolderMediaButton</tabstop>
+  <tabstop>renameMediaButton</tabstop>
+  <tabstop>removeMediaButton</tabstop>
+  <tabstop>noteTreeWidget</tabstop>
+  <tabstop>addNoteButton</tabstop>
+  <tabstop>addFolderNoteButton</tabstop>
+  <tabstop>renameNoteButton</tabstop>
+  <tabstop>removeNoteButton</tabstop>
+  <tabstop>showRelations</tabstop>
+  <tabstop>showEvents</tabstop>
+  <tabstop>showFiles</tabstop>
+  <tabstop>showNotes</tabstop>
+  <tabstop>showMedia</tabstop>
+  <tabstop>expandAll</tabstop>
+  <tabstop>collapseAll</tabstop>
+  <tabstop>findEdit</tabstop>
+  <tabstop>findProjectView</tabstop>
+  <tabstop>clearProjectFilter</tabstop>
+  <tabstop>projectView</tabstop>
+  <tabstop>treeGraphics</tabstop>
+  <tabstop>allGenerationsAbove</tabstop>
+  <tabstop>generationsNumberAbove</tabstop>
+  <tabstop>allGenerationsBelow</tabstop>
+  <tabstop>generationsNumberBelow</tabstop>
+  <tabstop>centerTreeView</tabstop>
+  <tabstop>zoomInTreeView</tabstop>
+  <tabstop>zoomOutTreeView</tabstop>
+  <tabstop>currentPerson</tabstop>
+  <tabstop>addPerson</tabstop>
+  <tabstop>removePerson</tabstop>
+  <tabstop>okFolderNoteRename</tabstop>
+  <tabstop>cancelFolderNoteRename</tabstop>
+  <tabstop>folderMediaEdit</tabstop>
+  <tabstop>fileRenameEdit</tabstop>
+  <tabstop>okFolderFileRename</tabstop>
+  <tabstop>cancelFolderFileRename</tabstop>
+  <tabstop>cancelFolderFileButton</tabstop>
+  <tabstop>okFolderFileButton</tabstop>
+  <tabstop>cancelFolderMediaButton</tabstop>
+  <tabstop>okFolderMediaButton</tabstop>
+  <tabstop>mediaRenameEdit</tabstop>
+  <tabstop>okFolderMediaRename</tabstop>
+  <tabstop>cancelFolderMediaRename</tabstop>
+  <tabstop>okFolderNoteButton</tabstop>
+  <tabstop>cancelFolderNoteButton</tabstop>
+  <tabstop>noteRenameEdit</tabstop>
+  <tabstop>folderFileEdit</tabstop>
+  <tabstop>folderNoteEdit</tabstop>
+ </tabstops>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

@@ -1,0 +1,10 @@
+build/
+html/
+latex/
+docs/
+packagecache/
+jsoncpp-[0-9]*.[0-9]*.[0-9]*/
+CppCheckResults.xml
+*.layout
+*.bkp
+.cccc/
