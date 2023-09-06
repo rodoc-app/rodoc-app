@@ -416,7 +416,7 @@ size_t Settings::addRelationTemplate(RelationTemplate& rt){
 }
 
 void Settings::addTag(const std::string& tag){
-    if(std::any_of(tags_.begin(), tags_.end(), [tag](const std::string& t1){return tag.compare(t1);})) return;
+    if(std::any_of(tags_.begin(), tags_.end(), [tag](const std::string& t1){return tag == t1;})) return;
 	tags_.push_back(tag);
 }
 
