@@ -62,12 +62,12 @@ void VirtualDrive::readJson(const Json::Value& value){
 
 void VirtualDrive::remove(const std::string& subfolderName){
     auto it = std::find_if(subdrives_.begin(), subdrives_.end(), [subfolderName](const std::unique_ptr<VirtualDrive>& drive){return drive->getName() == subfolderName;});
-    subdrives_.erase(it);
+    if (it != subdrives_.end()) subdrives_.erase(it);
 }
 
 void VirtualDrive::removeFile(size_t id){
     auto it = std::find_if(files_.begin(), files_.end(), [id](size_t fileId){return id == fileId;});
-    files_.erase(it);
+    if (it != files_.end()) files_.erase(it);
 }
 
 void VirtualDrive::rename(const std::string& name){

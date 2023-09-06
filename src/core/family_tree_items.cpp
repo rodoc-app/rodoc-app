@@ -102,7 +102,7 @@ void Event::readJson(const Json::Value& value){
 
 bool Event::removePerson(size_t id){
     auto it = std::find_if(persons_.begin(), persons_.end(), [id](auto&& pair){return pair.second == id;});
-    persons_.erase(it);
+    if (it != persons_.end()) persons_.erase(it);
     return persons_.size() == 0;
 }
 

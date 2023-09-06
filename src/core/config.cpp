@@ -544,7 +544,7 @@ void Settings::removeRelationTemplate(size_t index){
 
 void Settings::removeTag(const std::string& tag){
     auto it = std::find_if(tags_.begin(), tags_.end(), [tag](const std::string& t1){return t1 == tag;});
-    tags_.erase(it);
+    if (it != tags_.end()) tags_.erase(it);
 }
 
 AppSettings& Settings::setAppSettings(){
